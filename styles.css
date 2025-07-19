@@ -2,3 +2,68 @@
   font-family: NorseBold;
   src: url("fonts/Norse-Bold.otf") format("opentype");
 }
+
+:root {
+  --button-colour: #596d48;
+  --input-border: #e5e7eb;
+  --invalid-input: #c73636;
+  --selected-input: #4249ad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container {
+  width: 40%;
+  background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(0.5rem, 4vw + 1rem, 1rem);
+  margin-top: 10rem;
+  font-size: clamp(3rem, 4vw + 1rem, 5rem);
+}
+
+.logo-banner img {
+  height: 1.6667em;
+}
+
+.logo-banner h1 {
+  color: #ffffff;
+  font-family: NorseBold;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.credit-signature {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.credit-signature a {
+  color: #ffffff;
+}
+
+.form-container {
+  width: 60%;
+}
