@@ -7,7 +7,7 @@
   --button-colour: #596d48;
   --input-border: #e5e7eb;
   --invalid-input: #c73636;
-  --selected-input: #4249ad;
+  --selected-input: #2833ce;
   --secondary-colour: #f7f7f7;
 }
 
@@ -89,4 +89,48 @@
 .description-div p:nth-child(3) {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.form-div {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-div h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#signup-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 600px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 12px;
+}
+
+.form-field input {
+  height: 1.5rem;
+  border: 1px solid var(--input-border);
+  border-radius: 3px;
+  padding-left: 0.2rem;
+}
+
+input:invalid {
+  border: 1px solid var(--invalid-input);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--selected-input);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
